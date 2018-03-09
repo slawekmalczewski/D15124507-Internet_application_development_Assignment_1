@@ -1,0 +1,13 @@
+<div class="hero-unit">
+  <main role="main" class="container">
+    <div class="blog-post">
+      <h2 class="blog-post-title"><%= @post.title %></h2>
+      <p class="blog-post-meta small text-justify"><%= @post.created_at %></p>
+      <hr style="	background-color: #fff; border-top: 2px dashed #8c8b8b;" />
+      <p><%= @post.body %>
+    </div><!-- /.blog-post -->
+
+  <div style="text-align: center;">
+    <%= link_to("Back", {:action => 'index'}, :class => 'btn btn-warning') %>
+  </div>
+</div>

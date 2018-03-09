@@ -1,0 +1,15 @@
+<div class="hero-unit">
+  <main role="main" class="container">
+    <h1 class="text-danger">Are you sure you want to delete the following post ?</h1>
+    <br/>
+    <div class="blog-post">
+      <h2 class="blog-post-title"><%= @post.title %></h2>
+      <p class="blog-post-meta"><%= @post.created_at %></p>
+      <p><%= truncate(@post.body, :length => 250) %>
+    </div><!-- /.blog-post -->
+
+  <div style="text-align: center;">
+    <%= link_to("Cancel", {:action => 'index'}, :class => 'btn btn-warning') %>
+    <%= link_to("Delete", {:action => 'erase', :id => @post.id}, :class => 'btn btn-danger')%>
+  </div>
+</div>

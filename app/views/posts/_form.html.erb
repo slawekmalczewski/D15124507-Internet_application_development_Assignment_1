@@ -1,0 +1,24 @@
+<div class="hero-unit">
+  <table class="table table-striped">
+    <tr>
+      <th><%= f.label(:title) %></th>
+      <td><%= f.text_field(:title, :class => 'form-control') %></th>
+    </tr>
+    <tr>
+      <th><%= f.label(:body) %></th>
+      <td><%= f.text_area(:body, :class => 'form-control') %></th>
+    </tr>
+    <tr>
+      <th><%= f.label(:pozycja, "position") %></th>
+      <td><%= f.select(:pozycja, 1..@counter, :class => 'form-control') %></th>
+    </tr>
+    <tr>
+      <th><%= f.label(:visible, "Would you like to make this post visible?") %></th>
+      <td><%= f.check_box(:visible, :class => 'form-control') %></th>
+    </tr>
+    <tr>
+      <th><%= f.label(:created_at, "Post created at") %></th>
+      <td><%= f.datetime_select(:created_at, :class => 'form-control') %></th>
+    </tr>
+  </table>
+</div>

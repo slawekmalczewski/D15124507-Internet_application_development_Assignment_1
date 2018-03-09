@@ -1,0 +1,30 @@
+<div class="hero-unit">
+  <h1>Posts</h1>
+
+  <%= link_to("Add new post", {:action => 'new'}, :class => 'btn btn-mini btn-primary') %>
+
+  <p style="text-align: right;">Number of posts: <%= @post.size %></p>
+
+  <table class="table table-striped">
+    <tr class="info">
+      <th class="center">Position</th>
+      <th class="center">Title</th>
+      <th class="center">Visible</th>
+      <th class="center">Body</th>
+      <th class="center">Action</th>
+    </tr>
+    <% @post.each do |p| %>
+      <tr class="info">
+        <td class="center"><%= p.pozycja %></td>
+        <td class="center"><%= p.title %></td>
+        <td class="center"><%= p.visible ? 'Yes' : 'No' %></td>
+        <td class="center"><%= truncate(p.body, :length => 20) %></td>
+        <td class="actions">
+          <%= link_to("Show", {:action => 'show', :id => p.id}, :class => 'btn btn-xs btn-success') %>
+          <%= link_to("Edit", {:action => 'edit', :id => p.id}, :class => 'btn btn-xs btn-warning') %>
+          <%= link_to("Delete", {:action => 'delete', :id => p.id}, :class => 'btn btn-xs btn-danger') %>
+        </td>
+      </tr>
+    <% end %>
+  </table>
+</div>

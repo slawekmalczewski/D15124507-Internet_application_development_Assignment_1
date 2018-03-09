@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>D15124507 | Slawomir Malczewski</title>
+    <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.0/examples/navbars/navbar.css" rel="stylesheet">
+    <link href="http://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- navigation start -->
+  <%= render(:partial=>"menu") %>
+<!-- navigation end -->
+
+<!-- body content start -->
+<div class="container">
+
+  <% if !flash[:notice].blank? %>
+    <div class="alert alert-success" style="text-align: center;">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
+  <div id="content">
+    <%= yield %>
+  </div>
+</div>
+<!-- body content end-->
+
+<!-- footer start -->
+<footer class="footer">
+  <div class="container">
+    <span class="text-muted">&copy; Slawomir Malczewski 2018</span>
+  </div>
+</footer>
+<!-- footer end -->
+
+  </body>
+</html>

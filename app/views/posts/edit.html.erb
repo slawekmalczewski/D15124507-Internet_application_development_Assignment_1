@@ -1,0 +1,13 @@
+<div class="hero-unit">
+  <h1>Edit post:</h1>
+  <br/>
+  <%= form_for(:posts, :url => {:action => 'update', :id => @posts.id}) do |f| %>
+
+  <%= render(:partial => 'form', :locals => { :f =>f }) %>
+
+  <div style="text-align: center;">
+    <%= link_to("Cancel", {:action => 'index'}, :class => 'btn btn-warning') %>
+    <%= submit_tag("Update", :class => 'btn btn-primary') %>
+  </div>
+  <% end %>
+</div>
