@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.3'
+ruby '2.3.3'
 
 git_source(:github) do |repo_name|
   repo_name = "#{repo_name}/#{repo_name}" unless repo_name.include?("/")
@@ -52,7 +52,7 @@ group :development do
 end
 
 group :production do
-  gem 'pg', '0.17.1'
+  gem 'pg', '~> 0.18.4'
   gem 'rails_12factor', '0.0.2'
 end
 
