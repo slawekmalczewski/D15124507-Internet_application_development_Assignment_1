@@ -1,9 +1,43 @@
 <div class="hero-unit">
-  <main role="main" class="container">
-    <div class="blog-post">
-      <h2 class="blog-post-title">Welcome to my Project Website</h2>
-      <hr style="	background-color: #fff; border-top: 2px dashed #8c8b8b;" />
-      <p class="blog-post-meta small text-justify">Lorem ipsum</p>
+  <div class="row">
+    <div class="col-md-1">
+      <!--spacer -->
     </div>
+    <div class="col-md-10">
+      <div class="blog-post">
+        <h2 class="blog-post-title">Welcome to my Project Website</h2>
+        <hr style="	background-color: #fff; border-top: 2px dashed #8c8b8b;" />
+        <p class="article">
+          My name is Slawomir Malczewski and this very simple web application prepared in Ruby on Rails framework is a project for the first assignment for the <span style="font-style: oblique; color:blue;"> Internet Application Development Assessment.</span>
+          <br/>
+          The visitor of this website has a possibility to create/edit/delete posts from the administration panel, which is accessed through the <mark>Manage Post</mark> tab in the main menu.
+          <br/>
+          All created and published posts will be displayed in the <mark>Display Posts</mark> sub-web page that can be entered through the Display Posts tab in the main menu.
+          To cover the part of the assignment that requires to use own JavaScript I have created a script that will display randomly quote about photography each time the visitor will click <mark>Next Quote</mark> button
+        </p>
+      </div>
+    </div>
+</div>
+<br/>
+
+<div class="row">
+  <div class="col-md-3">
+    <!--spacer -->
+  </div>
+  <div class="col-md-6">
+    <div id="myjsContainer">
+      <blockquote>
+        <p id="phrase"></p>
+        <cite id="author"></cite>
+      </blockquote>
+      <button class='btn btn-md btn-info' onclick="newPhrase()">Next Quote...</button>
+    </div>
+  </div>
+</div>
+
 
 </div>
+
+<script type="text/javascript">
+  newPhrase();
+</script>
