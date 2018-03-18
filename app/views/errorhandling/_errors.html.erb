@@ -1,0 +1,15 @@
+<% if objekt && objekt.errors.size > 0 %>
+  <div class="bg-danger">
+  	<table class="table">
+    	<tr class="danger">
+    		<td>You have made <%= objekt.errors.size %> mistake(s) filling the Post Form.<br>
+    			Here is the list of the mistake(s):</td>
+    	</tr>
+    	<% objekt.errors.full_messages.each do |errormessage| %>
+      	<tr class="warning">
+      		<td><b><%= errormessage %></b></td>
+      	</tr>
+    	<% end %>
+</table>
+  </div>
+<% end %>

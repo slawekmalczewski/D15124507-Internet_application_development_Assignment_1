@@ -44,7 +44,7 @@ class PostsController < ApplicationController
 
   def erase
     post = Post.find(params[:id]).destroy
-    flash[:notice] = "Post has been deleted successfully"
+    flash[:notice] = "Post has been successfully deleted"
     redirect_to(:action => 'index')
   end
 
