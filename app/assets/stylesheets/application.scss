@@ -17,8 +17,12 @@
  @import "bootstrap";
 
 
+.conatiner {
+  margin-bottom: 75px;
+}
  .myfooter {
    position: fixed;
+   line-height: 60px;
    clear:both;
    width: 100%;
    bottom: 0;

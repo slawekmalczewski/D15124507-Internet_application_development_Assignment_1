@@ -42,13 +42,17 @@ blockquote:after {
   font-weight: bold;
 }
 
-.myfooter {
-  position: fixed;
-  clear:both;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  padding: 1rem;
-  background-color: #efefef;
-  text-align: center;
+.conatiner {
+  margin-bottom: 75px;
 }
+ .myfooter {
+   position: fixed;
+   line-height: 60px;
+   clear:both;
+   width: 100%;
+   bottom: 0;
+   left: 0;
+   padding: 1rem;
+   background-color: #efefef;
+   text-align: center;
+ }
