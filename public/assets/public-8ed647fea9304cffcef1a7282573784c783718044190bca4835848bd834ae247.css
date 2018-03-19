@@ -1,0 +1,58 @@
+/* line 5, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+blockquote {
+  font-family: Georgia, serif;
+  font-size: 2em;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
+}
+
+/* line 12, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+blockquote:before {
+  font-family: Georgia, serif;
+  position: absolute;
+  font-size: 4em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
+}
+
+/* line 21, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+blockquote:after {
+  font-family: Georgia, serif;
+  position: absolute;
+  float: right;
+  font-size: 4em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D";
+}
+
+/* line 32, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.5em;
+  font-style: oblique;
+}
+
+/* line 39, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+.article, .article ul, .article li {
+  font-style: normal;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+/* line 45, C:/Users/Slawek Malczewski/Sites/D15124507_Slawomir_Malczewski/app/assets/stylesheets/public.scss */
+.myfooter {
+  position: fixed;
+  clear: both;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
