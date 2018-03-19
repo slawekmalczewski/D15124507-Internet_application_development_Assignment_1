@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>D15124507 | Slawomir Malczewski</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/4.0/examples/navbars/navbar.css" rel="stylesheet">
     <link href="http://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" rel="stylesheet">
@@ -23,15 +24,14 @@
     </div>
   <% end %>
 
-  <div id="content">
     <%= yield %>
-  </div>
 </div>
+
 <!-- body content end-->
 
 <!-- footer start -->
-<footer style="position:absolute; bottom:0; width:100%; height:60px; line-height: :60px; background-color: #f5f5f5;">
-  <div style="font-size: 15px; padding-top: 20px; text-align:center;">
+<footer class="myfooter">
+  <div class="container">
     <p class="text-muted">&copy; Slawomir Malczewski 2018</p>
   </div>
 </footer>
