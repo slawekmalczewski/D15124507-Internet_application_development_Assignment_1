@@ -10,6 +10,6 @@ class PublicController < ApplicationController
   end
 
   def listposts
-    @posts = Post.sort
+    @posts = Post.where(:visible => true)
   end
 end

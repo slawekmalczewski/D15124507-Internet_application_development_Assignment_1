@@ -9,5 +9,6 @@ class Post < ApplicationRecord
               :length => {:minimum => 50, :message => ": The post is too short minimum size of title is 50 characters"}
 
   scope :sort, lambda{order("posts.created_at ASC")}
+  scope :widoczny, lambda{where(:visible => true)}
 
 end

@@ -18,11 +18,17 @@
 
 
  .myfooter {
-   position: absolute;
-   right: 0;
+   position: fixed;
+   clear:both;
+   width: 100%;
    bottom: 0;
    left: 0;
    padding: 1rem;
    background-color: #efefef;
    text-align: center;
+ }
+
+
+ html {
+   height: 100%;
  }
